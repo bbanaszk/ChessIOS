@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A909D1842C6815EB00A0552E /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A909D1832C6815EB00A0552E /* PracticeView.swift */; };
+		A99C8D622C6D77EA00B55B54 /* CheckConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C8D612C6D77EA00B55B54 /* CheckConditions.swift */; };
+		A9CDF9892C6FD0360007842D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDF9882C6FD0340007842D /* SettingsView.swift */; };
+		A9CDF98B2C7012200007842D /* PromotionDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDF98A2C7012130007842D /* PromotionDialogOverlayView.swift */; };
+		A9E5620A2C6C02F500377A6E /* MoveLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E562092C6C02F500377A6E /* MoveLog.swift */; };
+		A9E5620C2C6C1EFC00377A6E /* CapturedPiecesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E5620B2C6C1EFC00377A6E /* CapturedPiecesView.swift */; };
+		A9FE0ED42C68161800721DF5 /* PiecesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE0ED22C68161800721DF5 /* PiecesView.swift */; };
+		A9FE0ED52C68161800721DF5 /* Miscellaneous.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE0ED32C68161800721DF5 /* Miscellaneous.swift */; };
+		A9FE0ED72C68266B00721DF5 /* GetMoves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FE0ED62C68266B00721DF5 /* GetMoves.swift */; };
+		AB346F3C2C6BE22F001CD5DA /* UNLICENCE in Resources */ = {isa = PBXBuildFile; fileRef = AB346EFF2C6BE22F001CD5DA /* UNLICENCE */; };
+		AB346F3D2C6BE22F001CD5DA /* half_ka_v2_hm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F012C6BE22F001CD5DA /* half_ka_v2_hm.cpp */; };
+		AB346F3E2C6BE22F001CD5DA /* evaluate_nnue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F0A2C6BE22F001CD5DA /* evaluate_nnue.cpp */; };
+		AB346F3F2C6BE22F001CD5DA /* tbprobe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F112C6BE22F001CD5DA /* tbprobe.cpp */; };
+		AB346F402C6BE22F001CD5DA /* .depend in Resources */ = {isa = PBXBuildFile; fileRef = AB346F142C6BE22F001CD5DA /* .depend */; };
+		AB346F412C6BE22F001CD5DA /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F152C6BE22F001CD5DA /* benchmark.cpp */; };
+		AB346F422C6BE22F001CD5DA /* bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F172C6BE22F001CD5DA /* bitboard.cpp */; };
+		AB346F432C6BE22F001CD5DA /* evaluate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F192C6BE22F001CD5DA /* evaluate.cpp */; };
+		AB346F442C6BE22F001CD5DA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F1B2C6BE22F001CD5DA /* main.cpp */; };
+		AB346F452C6BE22F001CD5DA /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = AB346F1C2C6BE22F001CD5DA /* Makefile */; };
+		AB346F462C6BE22F001CD5DA /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F1D2C6BE22F001CD5DA /* misc.cpp */; };
+		AB346F472C6BE22F001CD5DA /* movegen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F1F2C6BE22F001CD5DA /* movegen.cpp */; };
+		AB346F482C6BE22F001CD5DA /* movepick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F212C6BE22F001CD5DA /* movepick.cpp */; };
+		AB346F492C6BE22F001CD5DA /* nn-b1a57edbea57.nnue in Resources */ = {isa = PBXBuildFile; fileRef = AB346F232C6BE22F001CD5DA /* nn-b1a57edbea57.nnue */; };
+		AB346F4A2C6BE22F001CD5DA /* nn-baff1ede1f90.nnue in Resources */ = {isa = PBXBuildFile; fileRef = AB346F242C6BE22F001CD5DA /* nn-baff1ede1f90.nnue */; };
+		AB346F4B2C6BE22F001CD5DA /* position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F262C6BE22F001CD5DA /* position.cpp */; };
+		AB346F4C2C6BE22F001CD5DA /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F282C6BE22F001CD5DA /* search.cpp */; };
+		AB346F4D2C6BE22F001CD5DA /* stockfish_wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB346F2B2C6BE22F001CD5DA /* stockfish_wrapper.mm */; };
+		AB346F4E2C6BE22F001CD5DA /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F2E2C6BE22F001CD5DA /* thread.cpp */; };
+		AB346F4F2C6BE22F001CD5DA /* timeman.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F302C6BE22F001CD5DA /* timeman.cpp */; };
+		AB346F502C6BE22F001CD5DA /* tt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F322C6BE22F001CD5DA /* tt.cpp */; };
+		AB346F512C6BE22F001CD5DA /* tune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F342C6BE22F001CD5DA /* tune.cpp */; };
+		AB346F522C6BE22F001CD5DA /* uci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F372C6BE22F001CD5DA /* uci.cpp */; };
+		AB346F532C6BE22F001CD5DA /* ucioption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB346F392C6BE22F001CD5DA /* ucioption.cpp */; };
+		AB346F552C6BE259001CD5DA /* StockfishPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB346F542C6BE259001CD5DA /* StockfishPractice.swift */; };
+		AB3E27392C66F63700927A40 /* ChessUpdatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E27382C66F63700927A40 /* ChessUpdatedApp.swift */; };
+		AB3E273B2C66F63700927A40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E273A2C66F63700927A40 /* ContentView.swift */; };
+		AB3E273D2C66F63800927A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3E273C2C66F63800927A40 /* Assets.xcassets */; };
+		AB3E27402C66F63800927A40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3E273F2C66F63800927A40 /* Preview Assets.xcassets */; };
+		AB3E27472C66F64C00927A40 /* ColorCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E27462C66F64C00927A40 /* ColorCells.swift */; };
+		AB3E27492C66F6EC00927A40 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E27482C66F6EC00927A40 /* Board.swift */; };
+		AB3E274B2C66F6F900927A40 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E274A2C66F6F900927A40 /* CellView.swift */; };
+		AB3E27512C6970B800927A40 /* HapticEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E27502C6970B800927A40 /* HapticEffects.swift */; };
+		AB69502D2C6DA3630072C5D5 /* ChessEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB69502C2C6DA3630072C5D5 /* ChessEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A909D1832C6815EB00A0552E /* PracticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		A99C8D612C6D77EA00B55B54 /* CheckConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConditions.swift; sourceTree = "<group>"; };
+		A9CDF9882C6FD0340007842D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9CDF98A2C7012130007842D /* PromotionDialogOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionDialogOverlayView.swift; sourceTree = "<group>"; };
+		A9E562092C6C02F500377A6E /* MoveLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveLog.swift; sourceTree = "<group>"; };
+		A9E5620B2C6C1EFC00377A6E /* CapturedPiecesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedPiecesView.swift; sourceTree = "<group>"; };
+		A9FE0ED22C68161800721DF5 /* PiecesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PiecesView.swift; sourceTree = "<group>"; };
+		A9FE0ED32C68161800721DF5 /* Miscellaneous.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miscellaneous.swift; sourceTree = "<group>"; };
+		A9FE0ED62C68266B00721DF5 /* GetMoves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMoves.swift; sourceTree = "<group>"; };
+		AB346EFE2C6BE22F001CD5DA /* incbin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = incbin.h; sourceTree = "<group>"; };
+		AB346EFF2C6BE22F001CD5DA /* UNLICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UNLICENCE; sourceTree = "<group>"; };
+		AB346F012C6BE22F001CD5DA /* half_ka_v2_hm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = half_ka_v2_hm.cpp; sourceTree = "<group>"; };
+		AB346F022C6BE22F001CD5DA /* half_ka_v2_hm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half_ka_v2_hm.h; sourceTree = "<group>"; };
+		AB346F042C6BE22F001CD5DA /* affine_transform_sparse_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = affine_transform_sparse_input.h; sourceTree = "<group>"; };
+		AB346F052C6BE22F001CD5DA /* affine_transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = affine_transform.h; sourceTree = "<group>"; };
+		AB346F062C6BE22F001CD5DA /* clipped_relu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clipped_relu.h; sourceTree = "<group>"; };
+		AB346F072C6BE22F001CD5DA /* simd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simd.h; sourceTree = "<group>"; };
+		AB346F082C6BE22F001CD5DA /* sqr_clipped_relu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqr_clipped_relu.h; sourceTree = "<group>"; };
+		AB346F0A2C6BE22F001CD5DA /* evaluate_nnue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evaluate_nnue.cpp; sourceTree = "<group>"; };
+		AB346F0B2C6BE22F001CD5DA /* evaluate_nnue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluate_nnue.h; sourceTree = "<group>"; };
+		AB346F0C2C6BE22F001CD5DA /* nnue_accumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_accumulator.h; sourceTree = "<group>"; };
+		AB346F0D2C6BE22F001CD5DA /* nnue_architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_architecture.h; sourceTree = "<group>"; };
+		AB346F0E2C6BE22F001CD5DA /* nnue_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_common.h; sourceTree = "<group>"; };
+		AB346F0F2C6BE22F001CD5DA /* nnue_feature_transformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nnue_feature_transformer.h; sourceTree = "<group>"; };
+		AB346F112C6BE22F001CD5DA /* tbprobe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tbprobe.cpp; sourceTree = "<group>"; };
+		AB346F122C6BE22F001CD5DA /* tbprobe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbprobe.h; sourceTree = "<group>"; };
+		AB346F142C6BE22F001CD5DA /* .depend */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .depend; sourceTree = "<group>"; };
+		AB346F152C6BE22F001CD5DA /* benchmark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = benchmark.cpp; sourceTree = "<group>"; };
+		AB346F162C6BE22F001CD5DA /* benchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = benchmark.h; sourceTree = "<group>"; };
+		AB346F172C6BE22F001CD5DA /* bitboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitboard.cpp; sourceTree = "<group>"; };
+		AB346F182C6BE22F001CD5DA /* bitboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitboard.h; sourceTree = "<group>"; };
+		AB346F192C6BE22F001CD5DA /* evaluate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = evaluate.cpp; sourceTree = "<group>"; };
+		AB346F1A2C6BE22F001CD5DA /* evaluate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluate.h; sourceTree = "<group>"; };
+		AB346F1B2C6BE22F001CD5DA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB346F1C2C6BE22F001CD5DA /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AB346F1D2C6BE22F001CD5DA /* misc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = misc.cpp; sourceTree = "<group>"; };
+		AB346F1E2C6BE22F001CD5DA /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		AB346F1F2C6BE22F001CD5DA /* movegen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movegen.cpp; sourceTree = "<group>"; };
+		AB346F202C6BE22F001CD5DA /* movegen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movegen.h; sourceTree = "<group>"; };
+		AB346F212C6BE22F001CD5DA /* movepick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = movepick.cpp; sourceTree = "<group>"; };
+		AB346F222C6BE22F001CD5DA /* movepick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movepick.h; sourceTree = "<group>"; };
+		AB346F232C6BE22F001CD5DA /* nn-b1a57edbea57.nnue */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nn-b1a57edbea57.nnue"; sourceTree = "<group>"; };
+		AB346F242C6BE22F001CD5DA /* nn-baff1ede1f90.nnue */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nn-baff1ede1f90.nnue"; sourceTree = "<group>"; };
+		AB346F252C6BE22F001CD5DA /* perft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perft.h; sourceTree = "<group>"; };
+		AB346F262C6BE22F001CD5DA /* position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = position.cpp; sourceTree = "<group>"; };
+		AB346F272C6BE22F001CD5DA /* position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = position.h; sourceTree = "<group>"; };
+		AB346F282C6BE22F001CD5DA /* search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search.cpp; sourceTree = "<group>"; };
+		AB346F292C6BE22F001CD5DA /* search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = search.h; sourceTree = "<group>"; };
+		AB346F2B2C6BE22F001CD5DA /* stockfish_wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = stockfish_wrapper.mm; sourceTree = "<group>"; };
+		AB346F2C2C6BE22F001CD5DA /* StockfishWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockfishWrapper.h; sourceTree = "<group>"; };
+		AB346F2D2C6BE22F001CD5DA /* thread_win32_osx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_win32_osx.h; sourceTree = "<group>"; };
+		AB346F2E2C6BE22F001CD5DA /* thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thread.cpp; sourceTree = "<group>"; };
+		AB346F2F2C6BE22F001CD5DA /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		AB346F302C6BE22F001CD5DA /* timeman.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timeman.cpp; sourceTree = "<group>"; };
+		AB346F312C6BE22F001CD5DA /* timeman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timeman.h; sourceTree = "<group>"; };
+		AB346F322C6BE22F001CD5DA /* tt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tt.cpp; sourceTree = "<group>"; };
+		AB346F332C6BE22F001CD5DA /* tt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tt.h; sourceTree = "<group>"; };
+		AB346F342C6BE22F001CD5DA /* tune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tune.cpp; sourceTree = "<group>"; };
+		AB346F352C6BE22F001CD5DA /* tune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tune.h; sourceTree = "<group>"; };
+		AB346F362C6BE22F001CD5DA /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		AB346F372C6BE22F001CD5DA /* uci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uci.cpp; sourceTree = "<group>"; };
+		AB346F382C6BE22F001CD5DA /* uci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uci.h; sourceTree = "<group>"; };
+		AB346F392C6BE22F001CD5DA /* ucioption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ucioption.cpp; sourceTree = "<group>"; };
+		AB346F3A2C6BE22F001CD5DA /* ucioption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucioption.h; sourceTree = "<group>"; };
+		AB346F542C6BE259001CD5DA /* StockfishPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishPractice.swift; sourceTree = "<group>"; };
+		AB346F5B2C6C2762001CD5DA /* stockfish_bridging_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stockfish_bridging_header.h; path = Stockfish/src/stockfish_bridging_header.h; sourceTree = SOURCE_ROOT; };
+		AB3E27352C66F63700927A40 /* ChessUpdated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessUpdated.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3E27382C66F63700927A40 /* ChessUpdatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessUpdatedApp.swift; sourceTree = "<group>"; };
+		AB3E273A2C66F63700927A40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB3E273C2C66F63800927A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB3E273F2C66F63800927A40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB3E27462C66F64C00927A40 /* ColorCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCells.swift; sourceTree = "<group>"; };
+		AB3E27482C66F6EC00927A40 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		AB3E274A2C66F6F900927A40 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		AB3E27502C6970B800927A40 /* HapticEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticEffects.swift; sourceTree = "<group>"; };
+		AB69502C2C6DA3630072C5D5 /* ChessEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3E27322C66F63700927A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A99C8D632C6D784800B55B54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDF98A2C7012130007842D /* PromotionDialogOverlayView.swift */,
+				A9CDF9882C6FD0340007842D /* SettingsView.swift */,
+				A9FE0ED22C68161800721DF5 /* PiecesView.swift */,
+				A909D1832C6815EB00A0552E /* PracticeView.swift */,
+				AB3E273A2C66F63700927A40 /* ContentView.swift */,
+				AB3E27462C66F64C00927A40 /* ColorCells.swift */,
+				AB3E274A2C66F6F900927A40 /* CellView.swift */,
+				A9E5620B2C6C1EFC00377A6E /* CapturedPiecesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A99C8D642C6D785B00B55B54 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				A9FE0ED32C68161800721DF5 /* Miscellaneous.swift */,
+				AB3E27382C66F63700927A40 /* ChessUpdatedApp.swift */,
+				AB3E27502C6970B800927A40 /* HapticEffects.swift */,
+				AB346F542C6BE259001CD5DA /* StockfishPractice.swift */,
+				AB69502C2C6DA3630072C5D5 /* ChessEngine.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		A9E562082C6C02E500377A6E /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A99C8D612C6D77EA00B55B54 /* CheckConditions.swift */,
+				A9E562092C6C02F500377A6E /* MoveLog.swift */,
+				AB3E27482C66F6EC00927A40 /* Board.swift */,
+				A9FE0ED62C68266B00721DF5 /* GetMoves.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		AB346EFD2C6BE219001CD5DA /* Stockfish */ = {
+			isa = PBXGroup;
+			children = (
+				AB346F3B2C6BE22F001CD5DA /* src */,
+			);
+			path = Stockfish;
+			sourceTree = "<group>";
+		};
+		AB346F002C6BE22F001CD5DA /* incbin */ = {
+			isa = PBXGroup;
+			children = (
+				AB346EFE2C6BE22F001CD5DA /* incbin.h */,
+				AB346EFF2C6BE22F001CD5DA /* UNLICENCE */,
+			);
+			path = incbin;
+			sourceTree = "<group>";
+		};
+		AB346F032C6BE22F001CD5DA /* features */ = {
+			isa = PBXGroup;
+			children = (
+				AB346F012C6BE22F001CD5DA /* half_ka_v2_hm.cpp */,
+				AB346F022C6BE22F001CD5DA /* half_ka_v2_hm.h */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		AB346F092C6BE22F001CD5DA /* layers */ = {
+			isa = PBXGroup;
+			children = (
+				AB346F042C6BE22F001CD5DA /* affine_transform_sparse_input.h */,
+				AB346F052C6BE22F001CD5DA /* affine_transform.h */,
+				AB346F062C6BE22F001CD5DA /* clipped_relu.h */,
+				AB346F072C6BE22F001CD5DA /* simd.h */,
+				AB346F082C6BE22F001CD5DA /* sqr_clipped_relu.h */,
+			);
+			path = layers;
+			sourceTree = "<group>";
+		};
+		AB346F102C6BE22F001CD5DA /* nnue */ = {
+			isa = PBXGroup;
+			children = (
+				AB346F032C6BE22F001CD5DA /* features */,
+				AB346F092C6BE22F001CD5DA /* layers */,
+				AB346F0A2C6BE22F001CD5DA /* evaluate_nnue.cpp */,
+				AB346F0B2C6BE22F001CD5DA /* evaluate_nnue.h */,
+				AB346F0C2C6BE22F001CD5DA /* nnue_accumulator.h */,
+				AB346F0D2C6BE22F001CD5DA /* nnue_architecture.h */,
+				AB346F0E2C6BE22F001CD5DA /* nnue_common.h */,
+				AB346F0F2C6BE22F001CD5DA /* nnue_feature_transformer.h */,
+			);
+			path = nnue;
+			sourceTree = "<group>";
+		};
+		AB346F132C6BE22F001CD5DA /* syzygy */ = {
+			isa = PBXGroup;
+			children = (
+				AB346F112C6BE22F001CD5DA /* tbprobe.cpp */,
+				AB346F122C6BE22F001CD5DA /* tbprobe.h */,
+			);
+			path = syzygy;
+			sourceTree = "<group>";
+		};
+		AB346F3B2C6BE22F001CD5DA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				AB346F5B2C6C2762001CD5DA /* stockfish_bridging_header.h */,
+				AB346F002C6BE22F001CD5DA /* incbin */,
+				AB346F102C6BE22F001CD5DA /* nnue */,
+				AB346F132C6BE22F001CD5DA /* syzygy */,
+				AB346F142C6BE22F001CD5DA /* .depend */,
+				AB346F152C6BE22F001CD5DA /* benchmark.cpp */,
+				AB346F162C6BE22F001CD5DA /* benchmark.h */,
+				AB346F172C6BE22F001CD5DA /* bitboard.cpp */,
+				AB346F182C6BE22F001CD5DA /* bitboard.h */,
+				AB346F192C6BE22F001CD5DA /* evaluate.cpp */,
+				AB346F1A2C6BE22F001CD5DA /* evaluate.h */,
+				AB346F1B2C6BE22F001CD5DA /* main.cpp */,
+				AB346F1C2C6BE22F001CD5DA /* Makefile */,
+				AB346F1D2C6BE22F001CD5DA /* misc.cpp */,
+				AB346F1E2C6BE22F001CD5DA /* misc.h */,
+				AB346F1F2C6BE22F001CD5DA /* movegen.cpp */,
+				AB346F202C6BE22F001CD5DA /* movegen.h */,
+				AB346F212C6BE22F001CD5DA /* movepick.cpp */,
+				AB346F222C6BE22F001CD5DA /* movepick.h */,
+				AB346F252C6BE22F001CD5DA /* perft.h */,
+				AB346F262C6BE22F001CD5DA /* position.cpp */,
+				AB346F272C6BE22F001CD5DA /* position.h */,
+				AB346F282C6BE22F001CD5DA /* search.cpp */,
+				AB346F292C6BE22F001CD5DA /* search.h */,
+				AB346F2B2C6BE22F001CD5DA /* stockfish_wrapper.mm */,
+				AB346F2C2C6BE22F001CD5DA /* StockfishWrapper.h */,
+				AB346F2D2C6BE22F001CD5DA /* thread_win32_osx.h */,
+				AB346F2E2C6BE22F001CD5DA /* thread.cpp */,
+				AB346F2F2C6BE22F001CD5DA /* thread.h */,
+				AB346F302C6BE22F001CD5DA /* timeman.cpp */,
+				AB346F312C6BE22F001CD5DA /* timeman.h */,
+				AB346F322C6BE22F001CD5DA /* tt.cpp */,
+				AB346F332C6BE22F001CD5DA /* tt.h */,
+				AB346F342C6BE22F001CD5DA /* tune.cpp */,
+				AB346F352C6BE22F001CD5DA /* tune.h */,
+				AB346F362C6BE22F001CD5DA /* types.h */,
+				AB346F372C6BE22F001CD5DA /* uci.cpp */,
+				AB346F382C6BE22F001CD5DA /* uci.h */,
+				AB346F392C6BE22F001CD5DA /* ucioption.cpp */,
+				AB346F3A2C6BE22F001CD5DA /* ucioption.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		AB3E272C2C66F63700927A40 = {
+			isa = PBXGroup;
+			children = (
+				AB346F232C6BE22F001CD5DA /* nn-b1a57edbea57.nnue */,
+				AB346F242C6BE22F001CD5DA /* nn-baff1ede1f90.nnue */,
+				AB346EFD2C6BE219001CD5DA /* Stockfish */,
+				AB3E27372C66F63700927A40 /* ChessUpdated */,
+				AB3E27362C66F63700927A40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB3E27362C66F63700927A40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3E27352C66F63700927A40 /* ChessUpdated.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3E27372C66F63700927A40 /* ChessUpdated */ = {
+			isa = PBXGroup;
+			children = (
+				A99C8D642C6D785B00B55B54 /* Misc */,
+				A99C8D632C6D784800B55B54 /* Views */,
+				A9E562082C6C02E500377A6E /* Logic */,
+				AB3E273C2C66F63800927A40 /* Assets.xcassets */,
+				AB3E273E2C66F63800927A40 /* Preview Content */,
+			);
+			path = ChessUpdated;
+			sourceTree = "<group>";
+		};
+		AB3E273E2C66F63800927A40 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AB3E273F2C66F63800927A40 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB3E27342C66F63700927A40 /* ChessUpdated */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3E27432C66F63800927A40 /* Build configuration list for PBXNativeTarget "ChessUpdated" */;
+			buildPhases = (
+				AB3E27312C66F63700927A40 /* Sources */,
+				AB3E27322C66F63700927A40 /* Frameworks */,
+				AB3E27332C66F63700927A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChessUpdated;
+			productName = ChessUpdated;
+			productReference = AB3E27352C66F63700927A40 /* ChessUpdated.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3E272D2C66F63700927A40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AB3E27342C66F63700927A40 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = AB3E27302C66F63700927A40 /* Build configuration list for PBXProject "ChessUpdated" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB3E272C2C66F63700927A40;
+			productRefGroup = AB3E27362C66F63700927A40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3E27342C66F63700927A40 /* ChessUpdated */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB3E27332C66F63700927A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3E27402C66F63800927A40 /* Preview Assets.xcassets in Resources */,
+				AB346F492C6BE22F001CD5DA /* nn-b1a57edbea57.nnue in Resources */,
+				AB346F402C6BE22F001CD5DA /* .depend in Resources */,
+				AB3E273D2C66F63800927A40 /* Assets.xcassets in Resources */,
+				AB346F3C2C6BE22F001CD5DA /* UNLICENCE in Resources */,
+				AB346F4A2C6BE22F001CD5DA /* nn-baff1ede1f90.nnue in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3E27312C66F63700927A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB346F532C6BE22F001CD5DA /* ucioption.cpp in Sources */,
+				AB346F4C2C6BE22F001CD5DA /* search.cpp in Sources */,
+				AB346F452C6BE22F001CD5DA /* Makefile in Sources */,
+				AB346F4D2C6BE22F001CD5DA /* stockfish_wrapper.mm in Sources */,
+				AB3E273B2C66F63700927A40 /* ContentView.swift in Sources */,
+				AB346F482C6BE22F001CD5DA /* movepick.cpp in Sources */,
+				A909D1842C6815EB00A0552E /* PracticeView.swift in Sources */,
+				AB346F3F2C6BE22F001CD5DA /* tbprobe.cpp in Sources */,
+				AB346F3E2C6BE22F001CD5DA /* evaluate_nnue.cpp in Sources */,
+				AB346F432C6BE22F001CD5DA /* evaluate.cpp in Sources */,
+				AB346F4E2C6BE22F001CD5DA /* thread.cpp in Sources */,
+				AB346F442C6BE22F001CD5DA /* main.cpp in Sources */,
+				A9FE0ED52C68161800721DF5 /* Miscellaneous.swift in Sources */,
+				AB346F3D2C6BE22F001CD5DA /* half_ka_v2_hm.cpp in Sources */,
+				A9FE0ED72C68266B00721DF5 /* GetMoves.swift in Sources */,
+				AB346F522C6BE22F001CD5DA /* uci.cpp in Sources */,
+				AB3E274B2C66F6F900927A40 /* CellView.swift in Sources */,
+				AB346F4F2C6BE22F001CD5DA /* timeman.cpp in Sources */,
+				AB3E27392C66F63700927A40 /* ChessUpdatedApp.swift in Sources */,
+				AB346F512C6BE22F001CD5DA /* tune.cpp in Sources */,
+				AB69502D2C6DA3630072C5D5 /* ChessEngine.swift in Sources */,
+				AB346F412C6BE22F001CD5DA /* benchmark.cpp in Sources */,
+				A9CDF98B2C7012200007842D /* PromotionDialogOverlayView.swift in Sources */,
+				A99C8D622C6D77EA00B55B54 /* CheckConditions.swift in Sources */,
+				AB346F4B2C6BE22F001CD5DA /* position.cpp in Sources */,
+				AB346F472C6BE22F001CD5DA /* movegen.cpp in Sources */,
+				AB346F462C6BE22F001CD5DA /* misc.cpp in Sources */,
+				AB3E27492C66F6EC00927A40 /* Board.swift in Sources */,
+				A9E5620C2C6C1EFC00377A6E /* CapturedPiecesView.swift in Sources */,
+				AB3E27512C6970B800927A40 /* HapticEffects.swift in Sources */,
+				AB3E27472C66F64C00927A40 /* ColorCells.swift in Sources */,
+				A9CDF9892C6FD0360007842D /* SettingsView.swift in Sources */,
+				A9E5620A2C6C02F500377A6E /* MoveLog.swift in Sources */,
+				AB346F552C6BE259001CD5DA /* StockfishPractice.swift in Sources */,
+				A9FE0ED42C68161800721DF5 /* PiecesView.swift in Sources */,
+				AB346F502C6BE22F001CD5DA /* tt.cpp in Sources */,
+				AB346F422C6BE22F001CD5DA /* bitboard.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB3E27412C66F63800927A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/borys/Desktop/XCode/ChessUpdated/Stockfish/src/stockfish_bridging_header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				h = "";
+			};
+			name = Debug;
+		};
+		AB3E27422C66F63800927A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/borys/Desktop/XCode/ChessUpdated/Stockfish/src/stockfish_bridging_header.h;
+				VALIDATE_PRODUCT = YES;
+				h = "";
+			};
+			name = Release;
+		};
+		AB3E27442C66F63800927A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChessUpdated/Preview Content\"";
+				DEVELOPMENT_TEAM = SKDKJ7SAFD;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChessUpdated;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Stockfish/src/stockfish_bridging_header.h;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB3E27452C66F63800927A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChessUpdated/Preview Content\"";
+				DEVELOPMENT_TEAM = SKDKJ7SAFD;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChessUpdated;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Stockfish/src/stockfish_bridging_header.h;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3E27302C66F63700927A40 /* Build configuration list for PBXProject "ChessUpdated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3E27412C66F63800927A40 /* Debug */,
+				AB3E27422C66F63800927A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3E27432C66F63800927A40 /* Build configuration list for PBXNativeTarget "ChessUpdated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3E27442C66F63800927A40 /* Debug */,
+				AB3E27452C66F63800927A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB3E272D2C66F63700927A40 /* Project object */;
+}
